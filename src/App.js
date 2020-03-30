@@ -18,7 +18,7 @@ callAPI() {
 }
 
 componentWillMount() {
-    this.callAPI();
+    //this.callAPI();{this.state.apiResponse}
 }
     render() {
         return (
@@ -26,7 +26,7 @@ componentWillMount() {
            
     <TextField id="placeholder-only-title" placeholder="Enter house name" className="md-cell md-cell--bottom" block={true}/>
     <Button floating>home</Button>
-    <p className="App-intro">{this.state.apiResponse}</p>
+    <p className="App-intro">Hello World</p>
 
           </div>
         );
