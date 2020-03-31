@@ -1,4 +1,5 @@
 import React from 'react'
+
 // import {
 //     TextField,
 //     Button
@@ -12,7 +13,7 @@ export default class App extends React.Component {
 }
 
 callAPI() {
-    fetch("http://localhost:4000/familydetails")
+    fetch(process.env.REACT_APP_PARIVAAR_SERVER_URL + "familydetails")
         .then(res => res.text())
         .then(res => this.setState({ apiResponse: res }));
 }
