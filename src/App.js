@@ -1,8 +1,8 @@
 import React from 'react'
-import {
-    TextField,
-    Button
-  } from 'react-md';
+// import {
+//     TextField,
+//     Button
+//   } from 'react-md';
 
   
 export default class App extends React.Component {
@@ -18,15 +18,15 @@ callAPI() {
 }
 
 componentWillMount() {
-    //this.callAPI();{this.state.apiResponse}
+    this.callAPI();
 }
     render() {
         return (
             <div className="md-grid">
            
-    <TextField id="placeholder-only-title" placeholder="Enter house name" className="md-cell md-cell--bottom" block={true}/>
-    <Button floating>home</Button>
-    <p className="App-intro">Hello World</p>
+    {/* <TextField id="placeholder-only-title" placeholder="Enter house name" className="md-cell md-cell--bottom" block={true}/>
+    <Button floating>home</Button> */}
+    <p className="App-intro">{this.state.apiResponse}</p>
 
           </div>
         );
